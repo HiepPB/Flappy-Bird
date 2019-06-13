@@ -28,13 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.ongtren1 = new System.Windows.Forms.PictureBox();
             this.ongduoi1 = new System.Windows.Forms.PictureBox();
             this.ongtren2 = new System.Windows.Forms.PictureBox();
             this.ongduoi2 = new System.Windows.Forms.PictureBox();
             this.conchim = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.nutplay = new System.Windows.Forms.PictureBox();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.lblDiemSo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ongtren1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ongduoi1)).BeginInit();
@@ -47,80 +50,89 @@
             // ongtren1
             // 
             this.ongtren1.Image = ((System.Drawing.Image)(resources.GetObject("ongtren1.Image")));
-            this.ongtren1.Location = new System.Drawing.Point(60, -605);
-            this.ongtren1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.ongtren1.Location = new System.Drawing.Point(120, -1164);
+            this.ongtren1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ongtren1.Name = "ongtren1";
-            this.ongtren1.Size = new System.Drawing.Size(206, 811);
+            this.ongtren1.Size = new System.Drawing.Size(411, 1559);
             this.ongtren1.TabIndex = 0;
             this.ongtren1.TabStop = false;
             // 
             // ongduoi1
             // 
             this.ongduoi1.Image = ((System.Drawing.Image)(resources.GetObject("ongduoi1.Image")));
-            this.ongduoi1.Location = new System.Drawing.Point(54, 317);
-            this.ongduoi1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.ongduoi1.Location = new System.Drawing.Point(108, 609);
+            this.ongduoi1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ongduoi1.Name = "ongduoi1";
-            this.ongduoi1.Size = new System.Drawing.Size(212, 812);
+            this.ongduoi1.Size = new System.Drawing.Size(423, 1561);
             this.ongduoi1.TabIndex = 1;
             this.ongduoi1.TabStop = false;
             // 
             // ongtren2
             // 
             this.ongtren2.Image = ((System.Drawing.Image)(resources.GetObject("ongtren2.Image")));
-            this.ongtren2.Location = new System.Drawing.Point(362, -605);
-            this.ongtren2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.ongtren2.Location = new System.Drawing.Point(723, -1164);
+            this.ongtren2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ongtren2.Name = "ongtren2";
-            this.ongtren2.Size = new System.Drawing.Size(206, 811);
+            this.ongtren2.Size = new System.Drawing.Size(411, 1559);
             this.ongtren2.TabIndex = 2;
             this.ongtren2.TabStop = false;
             // 
             // ongduoi2
             // 
             this.ongduoi2.Image = ((System.Drawing.Image)(resources.GetObject("ongduoi2.Image")));
-            this.ongduoi2.Location = new System.Drawing.Point(362, 317);
-            this.ongduoi2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.ongduoi2.Location = new System.Drawing.Point(723, 609);
+            this.ongduoi2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ongduoi2.Name = "ongduoi2";
-            this.ongduoi2.Size = new System.Drawing.Size(212, 812);
+            this.ongduoi2.Size = new System.Drawing.Size(423, 1561);
             this.ongduoi2.TabIndex = 3;
             this.ongduoi2.TabStop = false;
             // 
             // conchim
             // 
             this.conchim.Image = ((System.Drawing.Image)(resources.GetObject("conchim.Image")));
-            this.conchim.Location = new System.Drawing.Point(9, 231);
-            this.conchim.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.conchim.Location = new System.Drawing.Point(18, 444);
+            this.conchim.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.conchim.Name = "conchim";
-            this.conchim.Size = new System.Drawing.Size(97, 81);
+            this.conchim.Size = new System.Drawing.Size(194, 156);
             this.conchim.TabIndex = 4;
             this.conchim.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // nutplay
             // 
             this.nutplay.Image = ((System.Drawing.Image)(resources.GetObject("nutplay.Image")));
-            this.nutplay.Location = new System.Drawing.Point(9, 10);
-            this.nutplay.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.nutplay.Location = new System.Drawing.Point(18, 19);
+            this.nutplay.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nutplay.Name = "nutplay";
-            this.nutplay.Size = new System.Drawing.Size(37, 41);
+            this.nutplay.Size = new System.Drawing.Size(74, 78);
             this.nutplay.TabIndex = 5;
             this.nutplay.TabStop = false;
+            this.nutplay.Click += new System.EventHandler(this.nutplay_Click);
+            // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // lblDiemSo
             // 
             this.lblDiemSo.AutoSize = true;
             this.lblDiemSo.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDiemSo.Location = new System.Drawing.Point(2, 446);
-            this.lblDiemSo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDiemSo.Location = new System.Drawing.Point(3, 858);
+            this.lblDiemSo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDiemSo.Name = "lblDiemSo";
-            this.lblDiemSo.Size = new System.Drawing.Size(127, 45);
+            this.lblDiemSo.Size = new System.Drawing.Size(256, 90);
             this.lblDiemSo.TabIndex = 6;
             this.lblDiemSo.Text = "Score:";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(677, 381);
+            this.ClientSize = new System.Drawing.Size(1536, 944);
             this.Controls.Add(this.lblDiemSo);
             this.Controls.Add(this.nutplay);
             this.Controls.Add(this.conchim);
@@ -130,10 +142,11 @@
             this.Controls.Add(this.ongtren1);
             this.DoubleBuffered = true;
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.ongtren1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ongduoi1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ongtren2)).EndInit();
@@ -152,7 +165,9 @@
         private System.Windows.Forms.PictureBox ongtren2;
         private System.Windows.Forms.PictureBox ongduoi2;
         private System.Windows.Forms.PictureBox conchim;
+        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox nutplay;
+        private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Label lblDiemSo;
     }
 }
